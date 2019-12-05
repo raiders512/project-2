@@ -1,0 +1,51 @@
+.box {
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+  border: 2px black solid;
+}
+
+p.Info{
+	font-family:times new roman;
+	font-size:30 px;
+}
+h3.title{
+	font-family:times new roman;
+	font-size:30 px;
+}
+
+
+
+.grid-item {
+  background-color: rgb(240,128,128) ;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container {
+  display:grid;
+  background-color: #FFFFFF; ;
+  height: 100vh;
+  width: 100vw;
+  grid-gap: 50px;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 150px auto;
+  grid-template-areas:
+    "b b b a a a a a a a a a"
+    "b b b c c c c c c c c c"
+  
+}
+.a{
+    grid-area: grid-item;
+
+}
+.b{
+    grid-area: grid-item;
+}
+
+.c{
+    grid-area: grid-item;
+}
+
